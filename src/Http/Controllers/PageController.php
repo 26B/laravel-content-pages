@@ -4,7 +4,7 @@ namespace TwentySixB\LaravelContentPages\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use App\Http\Controllers\Controller;
+use Illuminate\Routing\Controller;
 
 class PageController extends Controller
 {
