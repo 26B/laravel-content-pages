@@ -23,7 +23,7 @@ Once you have created a template, for example `somepage.blade.php`, you can poin
 Publish the configuration file should you need to customise it.
 
 ```
-php artisan vendor:publish --tag=laravel-content-pages-config
+php artisan vendor:publish --tag=content-pages-config
 ```
 
 If for example you dont want to use the catch-all route, you can disable it on the config `content-pages.php`
@@ -35,5 +35,5 @@ fallback_route => false,
 Then on your web routes you can add something like this.
 
 ```
-Route::get('/pages/*', [PageController::class, 'show']);
+Route::get('/pages/{any}', [PageController::class, 'show']);
 ```
